@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="LS-STAG-3D — immersed-boundary solver for arbitrary moving bodies and coupled problems">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a123f"/>
+      <stop offset="1" stop-color="#6d3197"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff794c"/>
+      <stop offset="1" stop-color="#ffb38f"/>
+    </linearGradient>
+    <linearGradient id="accentFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff794c" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#ff794c" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffb38f" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="bodyGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ff794c" stop-opacity="0.9"/>
+      <stop offset="0.38" stop-color="#ff794c" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ff794c" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.055"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#grid)"/>
+
+  <g fill="none" stroke="#e9d5ff" stroke-opacity="0.18" stroke-width="1.2">
+    <path d="M-40 150C150 150 300 170 420 195S600 250 850 215"/>
+    <path d="M-40 210C160 210 315 225 435 250S610 305 850 275"/>
+    <path d="M-40 270C160 270 315 285 435 310S610 365 850 335"/>
+    <path d="M-40 330C160 330 315 345 435 370S610 420 850 390"/>
+  </g>
+
+  <g fill="none" stroke-width="2.2" opacity="0.9">
+    <path d="M420 205C520 205 590 220 650 240S760 255 850 235" stroke="url(#accentFade)"/>
+    <path d="M-40 385C170 385 320 370 450 345S610 295 850 320" stroke="url(#accent)" opacity="0.55"/>
+  </g>
+
+  <ellipse cx="625" cy="250" rx="205" ry="180" fill="url(#bodyGlow)"/>
+
+  <g transform="translate(625 250)">
+    <g fill="none" stroke="#ffb38f" stroke-width="1.2" stroke-dasharray="4 7" opacity="0.55" transform="scale(1.1)">
+      <path d="M0 -22C26 -52 48 -96 30 -136C12 -164 -26 -154 -34 -116C-42 -78 -22 -36 0 -22Z"/>
+      <path d="M0 -22C26 -52 48 -96 30 -136C12 -164 -26 -154 -34 -116C-42 -78 -22 -36 0 -22Z" transform="rotate(120)"/>
+      <path d="M0 -22C26 -52 48 -96 30 -136C12 -164 -26 -154 -34 -116C-42 -78 -22 -36 0 -22Z" transform="rotate(240)"/>
+    </g>
+
+    <g fill="#21122f" stroke="#ff794c" stroke-width="3" stroke-linejoin="round">
+      <path d="M0 -22C26 -52 48 -96 30 -136C12 -164 -26 -154 -34 -116C-42 -78 -22 -36 0 -22Z"/>
+      <path d="M0 -22C26 -52 48 -96 30 -136C12 -164 -26 -154 -34 -116C-42 -78 -22 -36 0 -22Z" transform="rotate(120)"/>
+      <path d="M0 -22C26 -52 48 -96 30 -136C12 -164 -26 -154 -34 -116C-42 -78 -22 -36 0 -22Z" transform="rotate(240)"/>
+    </g>
+
+    <g fill="none" stroke="#ffb38f" stroke-width="1.4" opacity="0.75">
+      <path d="M0 -40C18 -66 31 -100 21 -124"/>
+      <path d="M0 -40C18 -66 31 -100 21 -124" transform="rotate(120)"/>
+      <path d="M0 -40C18 -66 31 -100 21 -124" transform="rotate(240)"/>
+    </g>
+
+    <circle r="15" fill="#ff794c"/>
+    <circle r="25" fill="none" stroke="#ff794c" stroke-opacity="0.55" stroke-width="1.5"/>
+  </g>
+
+  <g fill="#ff794c">
+    <circle cx="625" cy="114" r="4.5"/>
+    <circle cx="743" cy="318" r="4.5"/>
+    <circle cx="507" cy="318" r="4.5"/>
+  </g>
+
+  <text x="56" y="112" fill="#f7f1fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="700">LS-STAG-3D</text>
+  <text x="58" y="154" fill="#e9d5ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">3D immersed-boundary / cut-cell solver</text>
+  <text x="58" y="188" fill="#c4a7e7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">arbitrary bodies · ALE · coupled problems</text>
+  <text x="58" y="410" fill="#c4a7e7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">incompressible flows · FSI · HPC</text>
+</svg>

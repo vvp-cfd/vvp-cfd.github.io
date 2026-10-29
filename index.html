@@ -1,0 +1,852 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="CFD, immersed boundary methods, HPC, verification and validation">
+      
+      
+      
+        <link rel="canonical" href="https://vvp-cfd.github.io/">
+      
+      
+      
+        <link rel="next" href="publications/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Valeria Puzikova</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="assets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#valeria-puzikova" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Valeria Puzikova" class="md-header__button md-logo" aria-label="Valeria Puzikova" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Valeria Puzikova
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Valeria Puzikova" class="md-nav__button md-logo" aria-label="Valeria Puzikova" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Valeria Puzikova
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#research-interests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Research interests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Featured projects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-publications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Featured publications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-scivis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Featured SciVis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-conferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Featured Conferences
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awards-and-grants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Awards and grants
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="publications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conferences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conferences
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="scivis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciVis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#research-interests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Research interests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Featured projects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-publications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Featured publications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-scivis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Featured SciVis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-conferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Featured Conferences
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awards-and-grants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Awards and grants
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div class="hero">
+<h1 id="valeria-puzikova">Valeria Puzikova</h1>
+<p class="tagline">CFD researcher and software developer with 15+ years of experience</p>
+<p>Currently, I lead a team developing high-performance libraries for computation and data processing. Previously, I worked on physics engines at Huawei Moscow Research Center, on immersed-boundary methods at the Ivannikov Institute for System Programming RAS, and in industry at Fortum and other companies. I hold a PhD in Physics and Mathematics from Bauman Moscow State Technical University, where I also taught optimization methods and core undergraduate mathematics. I have authored 50+ papers, a textbook on non-Newtonian fluids, and 14 registered software programs.</p>
+<p style="margin:1rem 0 0.35rem;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;opacity:0.75;">Research profiles</p>
+<div class="hero-links" style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:0.35rem;">
+<a href="https://orcid.org/0000-0003-0712-4519" style="display:inline-block;padding:0.45rem 0.85rem;border:1px solid rgba(128,128,128,0.45);border-radius:999px;color:inherit;font-size:0.82rem;text-decoration:none;background:rgba(128,128,128,0.12);">ORCID</a>
+<a href="https://www.scopus.com/authid/detail.uri?authorId=56535425000" style="display:inline-block;padding:0.45rem 0.85rem;border:1px solid rgba(128,128,128,0.45);border-radius:999px;color:inherit;font-size:0.82rem;text-decoration:none;background:rgba(128,128,128,0.12);">Scopus</a>
+<a href="https://www.webofscience.com/wos/author/record/E-4893-2017" style="display:inline-block;padding:0.45rem 0.85rem;border:1px solid rgba(128,128,128,0.45);border-radius:999px;color:inherit;font-size:0.82rem;text-decoration:none;background:rgba(128,128,128,0.12);">Web of Science</a>
+<a href="https://www.researchgate.net/profile/Valeria-Puzikova?ev=hdr_xprf" style="display:inline-block;padding:0.45rem 0.85rem;border:1px solid rgba(128,128,128,0.45);border-radius:999px;color:inherit;font-size:0.82rem;text-decoration:none;background:rgba(128,128,128,0.12);">ResearchGate</a>
+<a href="https://www.elibrary.ru/author_items.asp?authorid=772184" style="display:inline-block;padding:0.45rem 0.85rem;border:1px solid rgba(128,128,128,0.45);border-radius:999px;color:inherit;font-size:0.82rem;text-decoration:none;background:rgba(128,128,128,0.12);">eLibrary</a>
+<a href="https://scholar.google.ru/citations?hl=ru&user=08jl5ScAAAAJ" style="display:inline-block;padding:0.45rem 0.85rem;border:1px solid rgba(128,128,128,0.45);border-radius:999px;color:inherit;font-size:0.82rem;text-decoration:none;background:rgba(128,128,128,0.12);">Google Scholar</a>
+</div>
+<p style="margin:1rem 0 0.35rem;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;opacity:0.75;">Contact &amp; social</p>
+<div class="hero-links" style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:0.35rem;">
+<a href="https://github.com/vvp-cfd" style="display:inline-block;padding:0.45rem 0.85rem;border:1px solid rgba(128,128,128,0.45);border-radius:999px;color:inherit;font-size:0.82rem;text-decoration:none;background:rgba(128,128,128,0.12);">GitHub</a>
+<a href="https://habr.com/ru/users/valeriaP/" style="display:inline-block;padding:0.45rem 0.85rem;border:1px solid rgba(128,128,128,0.45);border-radius:999px;color:inherit;font-size:0.82rem;text-decoration:none;background:rgba(128,128,128,0.12);">Habr</a>
+<a href="https://t.me/turbulence7D" style="display:inline-block;padding:0.45rem 0.85rem;border:1px solid rgba(128,128,128,0.45);border-radius:999px;color:inherit;font-size:0.82rem;text-decoration:none;background:rgba(128,128,128,0.12);">Telegram</a>
+<a href="mailto:valeria.puzikova@gmail.com" style="display:inline-block;padding:0.45rem 0.85rem;border:1px solid rgba(128,128,128,0.45);border-radius:999px;color:inherit;font-size:0.82rem;text-decoration:none;background:rgba(128,128,128,0.12);">Email</a>
+</div>
+</div>
+<h2 id="research-interests">Research interests</h2>
+<p style="margin:1rem 0 0.35rem;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;opacity:0.75;">CFD methods</p>
+<div class="chips" style="display:flex;flex-wrap:wrap;gap:0.5rem;margin:0.75rem 0 1.5rem;">
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Immersed boundary methods</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Cut-cell methods</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Viscous incompressible flows</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Non-Newtonian flows</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Viscoelasticity</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Turbulence: RANS / LES / DES</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Fluid–structure interaction</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Coupled problems</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Verification &amp; validation</span>
+</div>
+
+<p style="margin:1rem 0 0.35rem;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;opacity:0.75;">Linear solvers &amp; HPC</p>
+<div class="chips" style="display:flex;flex-wrap:wrap;gap:0.5rem;margin:0.75rem 0 1.5rem;">
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Krylov methods</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Multigrid</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Smoothers</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Parallel algorithms</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Domain decomposition</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">GPU computing</span>
+</div>
+
+<p style="margin:1rem 0 0.35rem;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;opacity:0.75;">Applications &amp; systems
+</p>
+<div class="chips" style="display:flex;flex-wrap:wrap;gap:0.5rem;margin:0.75rem 0 1.5rem;">
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Physics engines</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">AR/VR</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">AI/ML</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">RISC-V</span>
+<span class="chip" style="display:inline-block;padding:0.25rem 0.7rem;border:1px solid rgba(128,128,128,0.35);border-radius:999px;font-size:0.78rem;background:rgba(128,128,128,0.12);color:inherit;">Optimization methods</span>
+</div>
+<p>Open to collaboration on CFD methods, solvers, verification &amp; validation.</p>
+<h2 id="featured-projects">Featured projects</h2>
+<table>
+<tr>
+<td width="33%" valign="top">
+<div class="card">
+<a href="https://github.com/vvp-cfd/LS-STAG-3D_parallel"><img src="assets/lsstag3d-card.svg" alt="LS-STAG-3D — flow past an arbitrary rotor"></a>
+<div class="card-body">
+<p style="margin:0 0 0.35rem;font-size:1rem;"><strong>LS-STAG-3D</strong></p>
+<p>3D immersed-boundary / cut-cell solver for incompressible flows with arbitrary moving bodies and coupled FSI problems. Code: <code>LS-STAG-3D_parallel</code>.</p>
+<a href="scivis/">SciVis →</a>
+</div>
+</div>
+</td>
+<td width="33%" valign="top">
+<div class="card">
+<a href="https://github.com/vvp-cfd/cfd-vv-suite"><img src="assets/cfdvv-card.svg" alt="cfd-vv-suite"></a>
+<div class="card-body">
+<p style="margin:0 0 0.35rem;font-size:1rem;"><strong>cfd-vv-suite</strong></p>
+<p>Open test suite for CFD verification and validation: 58 cases, solver-agnostic CLI, OpenFOAM integration.</p>
+<a href="software/">Learn more →</a>
+</div>
+</div>
+</td>
+<td width="33%" valign="top">
+<div class="card">
+<a href="https://github.com/vvp-cfd/beamer-template-kit"><img src="assets/beamer-card.svg" alt="beamer-template-kit"></a>
+<div class="card-body">
+<p style="margin:0 0 0.35rem;font-size:1rem;"><strong>beamer-template-kit</strong></p>
+<p>Commented LaTeX Beamer class with a custom palette and quick style customization.</p>
+<a href="software/">Learn more →</a>
+</div>
+</div>
+</td>
+</tr>
+</table>
+
+<p><a href="software/">Full software list →</a></p>
+<h2 id="featured-publications">Featured publications</h2>
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://lanbook.ru/catalog/matematika/nenyutonovskie-zhidkosti-ot-matematicheskikh-modeley-do-postroeniya-chislennykh-metodov-i-programmnoy-realizatsii/"><img src="assets/book-cover.jpg" alt="Book cover: Non-Newtonian Fluids" width="220"></a>
+<p><strong>Non-Newtonian Fluids: From Mathematical Models to the Construction of Numerical Methods and Software Implementation</strong></p>
+<p>Lan, 2026. 132 p. (in Russian).</p>
+<p><a href="https://lanbook.ru/catalog/matematika/nenyutonovskie-zhidkosti-ot-matematicheskikh-modeley-do-postroeniya-chislennykh-metodov-i-programmnoy-realizatsii/">Publisher page →</a></p>
+</td>
+<td width="33%" valign="top">
+<a href="https://doi.org/10.1063/5.0277899"><img src="assets/pof-cover.jpg" alt="Cover: Physics of Fluids 2025" width="233"></a>
+<p><strong>Modification of the Level-Set Staggered immersed boundary method for turbulent flow simulation</strong></p>
+<p>Physics of Fluids, 2025, vol. 37, issue 8, pp. 85–118.</p>
+<p><a href="https://doi.org/10.1063/5.0277899">Paper DOI →</a></p>
+</td>
+<td width="33%" valign="top">
+<a href="https://www.elibrary.ru/item.asp?id=28810902"><img src="assets/diss-cover.jpg" alt="Dissertation cover: LS-STAG immersed boundary method" width="230"></a>
+<p><strong>Development of a Modification of the LS-STAG Immersed Boundary Method for Mathematical Simulation in Coupled Hydroelastic Problems</strong></p>
+<p>PhD thesis, BMSTU, 2016. 150 p. (in Russian).</p>
+<p><a href="https://www.elibrary.ru/item.asp?id=28810902">eLibrary →</a></p>
+</td>
+</tr>
+</table>
+
+<p><a href="publications/">Full publication list →</a></p>
+<h2 id="featured-scivis">Featured SciVis</h2>
+<table>
+<tr>
+<td width="33%" valign="top">
+<video controls muted loop playsinline preload="none" poster="assets/scivis/propeller-3d-index.jpg" style="display:block;width:100%;aspect-ratio:638/326;object-fit:contain;background:#07130a;">
+<source src="assets/scivis/propeller-3d-index.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p><strong>Autorotating propeller</strong></p>
+<p>3D case · velocity field</p>
+</td>
+<td width="33%" valign="top">
+<video controls muted loop playsinline preload="none" poster="assets/scivis/rot-osc-3d.jpg" style="display:block;width:100%;aspect-ratio:638/326;object-fit:contain;background:#07130a;">
+<source src="assets/scivis/rot-osc-3d.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p><strong>Rotationally oscillating body</strong></p>
+<p>3D case · velocity field</p>
+</td>
+<td width="33%" valign="top">
+<video controls muted loop playsinline preload="none" poster="assets/scivis/ver-osc-1-1-3d.jpg" style="display:block;width:100%;aspect-ratio:638/326;object-fit:contain;background:#07130a;">
+<source src="assets/scivis/ver-osc-1-1-3d.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p><strong>Vertical oscillation, Se/St = 1.1</strong></p>
+<p>3D case · velocity field</p>
+</td>
+</tr>
+</table>
+
+<p><a href="scivis/">Full SciVis gallery →</a></p>
+<h2 id="featured-conferences">Featured Conferences</h2>
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://2025.iccesconf.org/"><img src="assets/icces2025-cover.jpg" alt="ICCES 2025" width="220"></a>
+<p><strong>ICCES2025</strong></p>
+<p>Changsha, China · May 25–29, 2025</p>
+<p><a href="https://2025.iccesconf.org/">Conference</a> ·
+<a href="https://doi.org/10.1007/978-3-032-17313-3_80">Paper DOI</a></p>
+</td>
+<td width="33%" valign="top">
+<a href="https://congress.cimne.com/coupled2017/"><img src="assets/coupled2017-cover.jpg" alt="Coupled Problems 2017" width="220"></a>
+<p><strong>COUPLED PROBLEMS 2017</strong></p>
+<p>Rhodes, Greece · June 12–14, 2017</p>
+<p><a href="https://congress.cimne.com/coupled2017/">Conference</a> ·
+<a href="https://upcommons.upc.edu/bitstreams/02631476-838d-4ca0-a8c7-fb167f6ece3a/download">Paper</a></p>
+</td>
+<td width="33%" valign="top">
+<a href="https://congress.cimne.com/coupled2015/"><img src="assets/coupled2015-cover.jpg" alt="Coupled Problems 2015" width="220"></a>
+<p><strong>COUPLED PROBLEMS 2015</strong></p>
+<p>Venice, Italy · May 18–20, 2015</p>
+<p><a href="https://congress.cimne.com/coupled2015/">Conference</a> ·
+<a href="https://upcommons.upc.edu/bitstreams/add7aa83-e094-4962-8ad3-fe5a0742d3af/download">Paper 1</a> ·
+<a href="https://upcommons.upc.edu/bitstreams/e483f7df-1ebc-46f1-a7b0-f172f6ddf0b0/download">Paper 2</a></p>
+</td>
+</tr>
+</table>
+
+<p><a href="conferences/">Full conference list →</a></p>
+<h2 id="awards-and-grants">Awards and grants</h2>
+<ul>
+<li>RSF grant 17-79-20445 — <em>Efficient numerical methods for unsteady
+  aerodynamic/hydrodynamic loads</em> (2017–2022; participant).</li>
+<li>Huawei Moscow Research Center President Award (2021).</li>
+<li>RFBR grant 18-31-20051 — <em>Vortex methods and coupled hydroelasticity on
+  multiprocessor systems</em> (2018–2020; participant).</li>
+<li>RFP grant for young scientists MK-743.2018.8 — <em>Development of a modification of the LS-STAG method for
+  modelling non-Newtonian flows and its implementation in a parallel software
+  package for coupled hydroelastic problems</em> (2018–2019; PI V.V. Puzikova). 
+  <a href="https://www.elibrary.ru/item.asp?id=53998811">eLibrary</a></li>
+<li>RFP Scholarship for young scientists and
+  post-graduate students SP-2907.2015.5 — <em>Development of a parallel software
+  package for numerical solution of aerohydroelasticity coupled problems by
+  using the LS-STAG immersed boundary method and its modifications</em>
+  (2015–2017).</li>
+<li>RFP grant for young scientists
+  MK-5357.2015.8 — <em>Study of the efficiency of mesh and meshless methods for
+  mathematical modelling in two-dimensional hydroelasticity problems</em>
+  (2015–2016; PI V.S. Moreva; participant).</li>
+<li>RFP grant NSh-1432.2014.8 —
+  <em>Mathematical modelling of non-stationary thermomechanical processes in
+  consolidated micro- and nanostructured materials under high-intensity
+  physical fields</em> (2014–2015; PI V.S. Zarubin; participant).</li>
+<li>Schlumberger Scholarship Award (2012–2013).</li>
+<li>Winner, All-Russian competition of research works of students and
+  postgraduates in mathematical sciences (2011).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

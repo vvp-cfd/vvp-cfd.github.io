@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Scientific visualization placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#21122f"/>
+      <stop offset="1" stop-color="#4b206f"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff794c" stop-opacity="0.85"/>
+      <stop offset="0.45" stop-color="#ff794c" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ff794c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g fill="none" stroke="#e9d5ff" stroke-opacity="0.22" stroke-width="1.2">
+    <path d="M-20 210C120 150 230 260 360 200S590 120 820 180"/>
+    <path d="M-20 240C120 180 230 290 360 230S590 150 820 210"/>
+    <path d="M-20 270C120 210 230 320 360 260S590 180 820 240"/>
+    <path d="M-20 300C120 240 230 350 360 290S590 210 820 270"/>
+    <path d="M-20 330C120 270 230 380 360 320S590 240 820 300"/>
+  </g>
+  <ellipse cx="560" cy="210" rx="170" ry="95" fill="url(#spot)"/>
+  <circle cx="560" cy="210" r="44" fill="#21122f" stroke="#ff794c" stroke-width="3"/>
+  <circle cx="560" cy="210" r="64" fill="none" stroke="#ff794c" stroke-opacity="0.45" stroke-width="1.5"/>
+  <text x="56" y="92" fill="#f7f1fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">SciVis</text>
+  <text x="58" y="128" fill="#e9d5ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19">replace with a CFD render or animation</text>
+  <text x="58" y="410" fill="#c4a7e7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">vorticity · pressure · velocity magnitude · 3D isosurfaces</text>
+</svg>
